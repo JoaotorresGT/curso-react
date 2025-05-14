@@ -1,11 +1,16 @@
+import PropTypes, { number } from 'prop-types'
 
-function Item(props) {
+function Item({marca, ano_lancamento}) {
     return (
         <>
-            <li>{props.marca}</li>
-            <p>Teste</p>
+            <li>{marca} - {ano_lancamento}</li>
         </>
     );
+}
+
+
+Item.propsTypes = {
+    marca: PropTypes.string.isRequired
 }
 
 export default Item;
