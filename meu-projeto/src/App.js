@@ -1,4 +1,5 @@
 import './App.css';
+import Condicional from './components/Condicional';
 import Evento from './components/Evento';
 import Form from './components/Form';
 
@@ -9,9 +10,8 @@ const name = "João"
 
   return (
     <div className="App">
-      <h1>Testando Eventos</h1>
-      <Evento numero="1"></Evento>
-      <Form></Form>
+      <h1>Renderização Condicional</h1>
+      <Condicional></Condicional>
     </div>
   );
 }
