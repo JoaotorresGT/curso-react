@@ -1,19 +1,18 @@
 import './App.css';
-import Condicional from './components/Condicional';
-import Evento from './components/Evento';
-import Form from './components/Form';
+import OutraLista from './components/OutraLista';
+
 
 function App() {
-
-const name = "João"
-  const nome = 'Maria'
+  const meusItens = ['react', 'vue', 'angular',]
 
   return (
     <div className="App">
       <h1>Renderização Condicional</h1>
-      <Condicional></Condicional>
+      <OutraLista itens={meusItens}></OutraLista>
+      <OutraLista itens={[]}></OutraLista>
+      
     </div>
-  );
+  )
 }
 
 export default App;
